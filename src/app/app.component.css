@@ -1,0 +1,137 @@
+.main {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.main2 {
+  max-width: 600px;
+  margin: 10px auto;
+}
+
+.myBorder {
+  border-bottom: black 2px solid;
+  border-top: black 2px solid;
+  border-left: black 2px solid;
+  border-right: black 2px solid;
+}
+
+.myBorder2 {
+  border-bottom: black 5px solid;
+  border-top: black 5px solid;
+  border-left: black 5px solid;
+  border-right: black 5px solid;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin-left: 20px;
+  vertical-align: top;
+}
+
+.myPadding {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.myMargin {
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.myMarginAndSize {
+  margin: 40px auto;
+  width: 200px;
+  height: 200px;
+}
+
+.myBc {
+  background-color: red;
+}
+
+.myRelativePosition {
+  position: relative;
+  top: 120px;
+  left: 100px;
+}
+
+.myAbsolutePosition {
+  position: absolute;
+  top: 120px;
+}
+
+.box {
+  display: inline-block;
+  margin-left: 20px;
+  width: 200px;
+  height: 200px;
+  border-bottom: black 1px solid;
+  border-top: black 1px solid;
+  border-left: black 1px solid;
+  border-right: black 1px solid;
+}
+
+/* below are CSS for Response Design */
+@media screen and (min-width: 600px) {
+  nav {
+    float: left;
+    width: 25%;
+  }
+  section {
+    margin-left: 25%;
+  }
+}
+@media screen and (max-width: 599px) {
+  nav li {
+    display: inline;
+  }
+}
+
+/* below are CSS for position exercise */
+.myContainer {
+  position: relative;
+  width: 100%;
+  max-height: 500px;
+}
+nav {
+  position: absolute;
+  left: 0px;
+  width: 200px;
+}
+section {
+  /* position is static by default */
+  margin-left: 200px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  background-color: white;
+  width: 100%;
+}
+body {
+  margin-bottom: 10px;
+}
+.myNavBorder {
+  border-bottom: deeppink 3px solid;
+  border-top: deeppink 3px solid;
+  border-left: deeppink 3px solid;
+  border-right: deeppink 3px solid;
+}
+.myContainerBorder {
+  border-bottom: green 3px solid;
+  border-top: green 3px solid;
+  border-left: green 3px solid;
+  border-right: green 3px solid;
+}
+.myContentBorder {
+  border-bottom: yellow 3px solid;
+  border-top: yellow 3px solid;
+  border-left: yellow 3px solid;
+  border-right: yellow 3px solid;
+}
