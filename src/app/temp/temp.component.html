@@ -1,0 +1,24 @@
+<div class="myBc2 myContainer2">
+  <div class="box2" style="background-color: azure; display: flex; justify-content: space-around; align-items: center;">
+    <form style="width: 100%; height: 80%; display: flex; justify-content: space-around;">
+      <div style="width: 60%; height: 100%; display: flex; justify-content: space-between; flex-direction: column; align-items: center;">
+        <h3>中华小厨神 -- 请添加原料</h3>
+        <div style="width: 100%; height: 100%;">
+          <input name="material1" type="text" class="form-control" placeholder="原料01" [(ngModel)]="material1">
+        </div>
+        <div style="width: 100%; height: 100%;">
+          <input name="material2" type="text" class="form-control" placeholder="原料02" [(ngModel)]="material2">
+        </div>
+        <div style="width: 100%; height: 100%;">
+          <button type="submit" class="btn btn-success" style="width: 100%; height: 50%;" (click)="cookDishes()">炒菜~炒炒炒~~</button>
+        </div>
+        <div style="width: 100%; height: 100%;">
+          <button type="submit" class="btn btn-primary" style="width: 100%; height: 50%;" (click)="resetDishes()">洗碗刷锅</button>
+        </div>
+        <div style="width: 100%; display: flex; justify-content: space-evenly;">
+          <span *ngIf="isCooked" style="color: saddlebrown">恭喜厨神获得：{{ finalDish }}</span>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
